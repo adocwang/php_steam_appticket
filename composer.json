@@ -1,0 +1,13 @@
+{
+    "name": "adocwang/php_steam_appticket",
+    "description": "This module enables you to parse Steam encrypted app tickets",
+    "type": "library",
+    "require": {
+        "google/protobuf": "^3.9"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src"
+        }
+    }
+}
