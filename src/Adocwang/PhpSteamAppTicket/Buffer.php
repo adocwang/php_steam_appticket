@@ -33,6 +33,7 @@ class Buffer
         if ($res) {
             return $res[1];
         }
+        return null;
     }
 
     public function readUInt32LE($offset = null)
@@ -47,6 +48,7 @@ class Buffer
         if ($res) {
             return $res[1];
         }
+        return null;
     }
 
     public function readUInt64LE($offset = null)
@@ -61,6 +63,7 @@ class Buffer
         if ($res) {
             return $res[1];
         }
+        return null;
     }
 
     public function skip($length)
