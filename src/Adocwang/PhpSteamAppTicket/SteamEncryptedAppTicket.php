@@ -103,7 +103,7 @@ class SteamEncryptedAppTicket
             }
 
             $details['version'] = $ticket->readUInt32LE();
-            $details['steamID'] = new SteamID($ticket->readUInt64LE() . "");
+            $details['steamID'] = $ticket->readUInt64LE() . "";
             $details['appID'] = $ticket->readUInt32LE();
             $details['ownershipTicketExternalIP'] = long2ip($ticket->readUInt32LE());
             $details['ownershipTicketInternalIP'] = long2ip($ticket->readUInt32LE());

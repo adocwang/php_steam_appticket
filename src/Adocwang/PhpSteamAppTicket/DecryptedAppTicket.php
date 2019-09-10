@@ -12,7 +12,7 @@ namespace Adocwang\PhpSteamAppTicket;
 class DecryptedAppTicket
 {
     /**
-     * @var SteamId
+     * @var string
      */
     public $steamID;
 
